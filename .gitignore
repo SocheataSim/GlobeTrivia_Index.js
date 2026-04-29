@@ -1,0 +1,17 @@
+# ── Environment / Secrets ──────────────────────────────────────────
+# env.js contains real API keys — NEVER commit this file
+env.js
+
+# ── OS & editor noise ──────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# ── Python test artifacts ─────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo

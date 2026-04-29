@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>GlobeTrivia</title>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Sora:wght@400;600;700;800&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+<link rel="icon" type="image/png" href="asset/Logo.png"/>
+<script src="./theme-init.js"></script>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <div class="nav-logo" id="nav-logo-btn">
+      <img src="asset/Logo.png" alt="Logo" class="nav-logo-img">
+      GlobeTrivia
+    </div>
+    <button class="nav-toggle" id="nav-toggle-btn" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-panel">
+      <span class="nav-toggle-line"></span>
+      <span class="nav-toggle-line"></span>
+      <span class="nav-toggle-line"></span>
+    </button>
+    <div class="nav-panel" id="nav-panel" aria-hidden="true" inert>
+      <div class="nav-panel-inner">
+        <div class="nav-links">
+          <a class="nav-link" id="nav-home" href="#home">Home</a>
+          <a class="nav-link" id="nav-quiz" href="#quiz">Quiz</a>
+          <a class="nav-link" id="nav-notes" href="#notes">Notes</a>
+          <a class="nav-link" id="nav-history" href="#history">History</a>
+        </div>
+        <button class="theme-toggle" id="theme-toggle-btn" type="button" aria-label="Switch color theme" aria-pressed="false">
+          <span class="theme-toggle-icon" aria-hidden="true">🌙</span>
+          <span class="theme-toggle-label">Dark Mode</span>
+        </button>
+        <div id="nav-guest" class="nav-actions nav-actions-guest">
+          <button class="btn btn-ghost btn-sm" id="nav-login-btn">Sign In</button>
+          <button class="btn btn-primary btn-sm" id="nav-register-btn">Register</button>
+        </div>
+        <div id="nav-user" class="nav-actions nav-actions-user">
+          <div class="nav-avatar" id="nav-username"></div>
+          <button class="btn btn-ghost btn-sm" id="nav-logout-btn">Sign Out</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<div id="section-home" class="section active">
+  <div class="welcome-hero">
+    <div class="home-hero-layout">
+      <div class="home-hero-copy">
+        <p class="hero-tagline">World Explorer &amp; Quiz</p>
+        <h1 class="hero-h1">
+          <span class="c-blue">Discover.</span> <span class="c-gold">Learn.</span><br>
+          <span class="c-teal">Note.</span> <span class="c-purple">Explore.</span>
+        </h1>
+        <p class="hero-sub">Your all-in-one platform to explore countries, check live weather, take smart notes, and track your learning history.</p>
+        <div class="hero-features">
+          <div class="hero-feat"><span class="feat-icon">🔍</span><span class="feat-title">Explore Countries</span>Search facts, weather &amp; more.</div>
+          <div class="hero-feat"><span class="feat-icon">📖</span><span class="feat-title">Wikipedia Summaries</span>Real country descriptions.</div>
+          <div class="hero-feat"><span class="feat-icon">📝</span><span class="feat-title">Private Notes</span>Saved to your account.</div>
+          <div class="hero-feat"><span class="feat-icon">🗂️</span><span class="feat-title">Learning History</span>Track every country you visit.</div>
+        <button class="btn-hero" id="hero-start-btn">
+          Start Exploring
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </button>
+        </div>
+      </div>
+      <div class="home-hero-art">
+        <img src="asset/home.png" alt="Home page illustration" class="section-illustration section-illustration-home">
+      </div>
+    </div>
+  </div>
+  <div class="explore-hero" style="display: none;">
+  <div class="explore-globe-bg" aria-hidden="true">
+    <svg class="globe-lines" viewBox="0 0 800 400" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+      <ellipse cx="400" cy="200" rx="380" ry="90" stroke="rgba(96,165,250,0.08)" stroke-width="1"/>
+      <ellipse cx="400" cy="200" rx="380" ry="180" stroke="rgba(96,165,250,0.06)" stroke-width="1"/>
+      <ellipse cx="400" cy="200" rx="280" ry="60" stroke="rgba(96,165,250,0.07)" stroke-width="1"/>
+      <path d="M400,20 Q620,200 400,380" stroke="rgba(96,165,250,0.06)" stroke-width="1" fill="none"/>
+      <path d="M400,20 Q180,200 400,380" stroke="rgba(96,165,250,0.06)" stroke-width="1" fill="none"/>
+    </svg>
+  </div>
+  <div class="explore-hero-inner">
+    <div class="explore-hero-layout">
+      <div class="explore-hero-copy">
+        <div class="explore-eyebrow"><span class="eyebrow-dot"></span>World Explorer</div>
+        <h2>Discover Any Country<br><span class="explore-h2-accent">Instantly</span></h2>
+        <p>Facts, live weather, Wikipedia summary, and more all in one place.</p>
+        <div class="search-wrap">
+          <span class="search-icon">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+          </span>
+          <input id="country-input" class="search-input" type="text" placeholder="Search country..." autocomplete="off" />
+          <div id="search-suggestions" class="search-suggestions" style="display: none;"></div>
+          <button class="btn-search" id="search-btn">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+            Search
+          </button>
+        </div>
+        <p id="explore-error" class="form-message form-message-error explore-error"></p>
+        <div class="explore-quick-section">
+          <span class="quick-label">Quick explore →</span>
+          <div class="quick-chips" id="quick-chips-container">
+            <!-- Dynamically generated chips will appear here -->
+            <button class="quick-chip" id="random-btn">🎲 Surprise me</button>
+          </div>
+        </div>
+        <button class="btn-back" id="explore-back-btn">← Back to Home</button>
+      </div>
+      <div class="explore-hero-art">
+        <img src="asset/explore.png" alt="Explore page illustration" class="section-illustration section-illustration-explore">
+      </div>
+    </div>
+  </div>
+</div>
+  <div class="result-wrapper" style="display: none;">
+    <div id="explore-loading" class="loading-block loading-block-xl" style="display: none;"><div class="spinner"></div></div>
+    <div id="explore-result" style="display: none;"></div>
+  </div>
+</div>
+
+<div id="section-quiz" class="section">
+  <div class="page-shell quiz-shell">
+    <div id="quiz-setup">
+      <div class="page-hero">
+        <img src="asset/quiz.png" alt="Quiz page illustration" class="section-illustration page-hero-illustration">
+        <h2 class="page-title">Geography Quiz</h2>
+        <p class="page-subtitle">Test your world knowledge with auto-generated trivia questions.</p>
+      </div>
+      <div class="card quiz-setup-card">
+        <div class="card-body">
+          <div class="form-group quiz-form-group">
+            <label class="form-label">Number of Questions</label>
+            <select id="quiz-count" class="form-input">
+              <option value="5">5 questions</option>
+              <option value="10" selected>10 questions</option>
+              <option value="15">15 questions</option>
+            </select>
+          </div>
+          <div class="form-group quiz-form-group">
+            <label class="form-label">Difficulty</label>
+            <select id="quiz-diff" class="form-input">
+              <option value="easy">Easy</option>
+              <option value="medium" selected>Medium</option>
+              <option value="hard">Hard</option>
+            </select>
+          </div>
+          <button class="btn btn-primary btn-full" id="start-quiz-btn">Start Quiz ↗</button>
+          <p id="quiz-setup-error" class="form-message form-message-error"></p>
+        </div>
+      </div>
+    </div>
+    <div id="quiz-active" class="is-hidden">
+      <div class="quiz-header-row">
+        <div>
+          <span id="q-num" class="quiz-eyebrow"></span>
+          <span id="q-diff-badge" class="quiz-diff-badge is-hidden"></span>
+        </div>
+        <div class="quiz-score-block">
+          <span class="quiz-score-label">Score</span>
+          <span id="q-score-live" class="quiz-score-value">0</span>
+        </div>
+      </div>
+      <div class="quiz-progress-track">
+        <div id="quiz-progress-bar" class="quiz-progress-bar"></div>
+      </div>
+      <div class="card quiz-question-card">
+        <div class="card-body">
+          <p class="card-title">Question</p>
+          <p id="q-text" class="quiz-question-text"></p>
+        </div>
+      </div>
+      <div id="q-options" class="quiz-options"></div>
+      <div id="q-feedback" class="quiz-feedback is-hidden"></div>
+      <div class="quiz-actions">
+        <button id="next-btn" class="btn btn-primary is-hidden">Next Question →</button>
+        <button id="finish-btn" class="btn btn-teal is-hidden">See Results ✓</button>
+      </div>
+    </div>
+    <div id="quiz-results" class="quiz-results is-hidden">
+      <h2 class="page-title">Quiz Complete!</h2>
+      <div class="quiz-score-ring">
+        <span id="res-score" class="quiz-score-ring-value"></span>
+        <span class="quiz-score-ring-label">correct</span>
+      </div>
+      <p id="res-msg" class="quiz-results-message"></p>
+      <div class="card quiz-results-card">
+        <div class="card-body">
+          <div class="quiz-results-stats">
+            <div><p id="res-correct" class="quiz-stat-value quiz-stat-good"></p><p class="quiz-stat-label">Correct</p></div>
+            <div><p id="res-wrong" class="quiz-stat-value quiz-stat-bad"></p><p class="quiz-stat-label">Wrong</p></div>
+            <div><p id="res-pct" class="quiz-stat-value quiz-stat-gold"></p><p class="quiz-stat-label">Score %</p></div>
+          </div>
+        </div>
+      </div>
+      <div class="quiz-actions quiz-actions-centered">
+        <button class="btn btn-primary" id="play-again-btn">Play Again</button>
+        <button class="btn btn-ghost" id="change-settings-btn">Change Settings</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="section-notes" class="section">
+  <div class="notes-hero">
+    <img src="asset/notes.png" alt="Notes page illustration" class="section-illustration page-hero-illustration">
+    <h2> My Study Notes</h2>
+    <p>Capture what you learn about each country. Private to your account.</p>
+  </div>
+  <div class="notes-wrapper">
+    <div class="notes-toolbar">
+      <div class="notes-filters">
+        <input id="note-search" class="form-input notes-search-input" type="text" placeholder="🔍 Search notes..." />
+        <select id="note-sort" class="form-input">
+          <option value="newest">Newest first</option>
+          <option value="oldest">Oldest first</option>
+          <option value="country">By country</option>
+        </select>
+      </div>
+      <button class="btn btn-gold" id="add-note-btn">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M5 12h14"/></svg>
+        Add Note
+      </button>
+    </div>
+    <div class="notes-stats" id="notes-stats"></div>
+    <div class="notes-grid" id="notes-grid"></div>
+  </div>
+</div>
+
+<div id="section-history" class="section">
+  <div class="notes-hero history-hero">
+    <img src="asset/world.png" alt="History page illustration" class="section-illustration page-hero-illustration">
+    <h2 class="history-hero-title">Learning History</h2>
+    <p>Every country you've explored, your notes, and quiz performance all in one place.</p>
+  </div>
+  <div class="notes-wrapper">
+    <div id="history-content"></div>
+  </div>
+</div>
+
+<div id="auth-modal" class="modal-overlay">
+  <div class="modal-box modal-box-auth">
+    <div class="modal-header">
+      <div class="auth-tabs">
+        <button class="auth-tab active" id="auth-tab-login">Sign In</button>
+        <button class="auth-tab" id="auth-tab-register">Register</button>
+      </div>
+      <button class="modal-close" id="auth-modal-close">&times;</button>
+    </div>
+
+    <div id="auth-login-panel" class="modal-panel">
+      <div class="form-group">
+        <label class="form-label">Email</label>
+        <input id="login-email" class="form-input form-input-full" type="email" placeholder="you@example.com" />
+        <div class="form-error" id="err-login-email"></div>
+      </div>
+      <div class="form-group">
+        <label class="form-label">Password</label>
+        <input id="login-password" class="form-input form-input-full" type="password" placeholder="••••••••" />
+        <div class="form-error" id="err-login-password"></div>
+      </div>
+      <button class="btn btn-primary btn-full modal-submit-btn" id="login-btn">Sign In</button>
+      <p class="auth-switch-copy">
+        No account? <button class="link-btn" id="switch-to-register">Create one →</button>
+      </p>
+    </div>
+
+    <div id="auth-reg-panel" class="modal-panel is-hidden">
+      <div class="form-group">
+        <label class="form-label">Full Name</label>
+        <input id="reg-name" class="form-input form-input-full" type="text" placeholder="Your name" />
+        <div class="form-error" id="err-reg-name"></div>
+      </div>
+      <div class="form-group">
+        <label class="form-label">Email</label>
+        <input id="reg-email" class="form-input form-input-full" type="email" placeholder="you@example.com" />
+        <div class="form-error" id="err-reg-email"></div>
+      </div>
+      <div class="form-group">
+        <label class="form-label">Password</label>
+        <input id="reg-password" class="form-input form-input-full" type="password" placeholder="Min. 6 characters" />
+        <div class="form-error" id="err-reg-password"></div>
+      </div>
+      <div class="form-group">
+        <label class="form-label">Confirm Password</label>
+        <input id="reg-confirm" class="form-input form-input-full" type="password" placeholder="Repeat password" />
+        <div class="form-error" id="err-reg-confirm"></div>
+      </div>
+      <button class="btn btn-primary btn-full modal-submit-btn" id="reg-btn">Create Account</button>
+      <p class="auth-switch-copy">
+        Have an account? <button class="link-btn" id="switch-to-login">Sign in →</button>
+      </p>
+    </div>
+  </div>
+</div>
+
+<div id="note-modal" class="modal-overlay">
+  <div class="modal-box">
+    <div class="modal-header">
+      <h3 class="modal-title" id="note-modal-title">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M5 12h14"/></svg>
+        Add Note
+      </h3>
+      <button class="modal-close" id="note-modal-close">&times;</button>
+    </div>
+    <div class="modal-panel note-modal-panel">
+      <div class="form-group">
+        <label class="form-label">Country *</label>
+        <input id="note-country" class="form-input form-input-full" type="text" placeholder="e.g. Japan" />
+        <div class="form-error" id="err-country">Country is required.</div>
+      </div>
+      <div class="form-group form-group-no-margin">
+        <label class="form-label">Note Content *</label>
+        <textarea id="note-content" class="form-input form-input-full" rows="6" placeholder="Write your notes here..."></textarea>
+        <div class="form-error" id="err-content">Note content is required.</div>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <button class="btn btn-ghost" id="note-modal-cancel">Cancel</button>
+      <button class="btn btn-gold" id="note-modal-save">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"/><polyline points="17 21 17 13 7 13 7 21"/><polyline points="7 3 7 8 15 8"/></svg>
+        Save Note
+      </button>
+    </div>
+  </div>
+</div>
+
+<div id="view-modal" class="modal-overlay">
+  <div class="modal-box modal-box-wide">
+    <div class="modal-header">
+      <h3 class="modal-title">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+        Note Detail
+      </h3>
+      <button class="modal-close" id="view-modal-close">&times;</button>
+    </div>
+    <div id="view-modal-body" class="modal-panel"></div>
+    <div class="modal-footer">
+      <button class="btn btn-ghost" id="view-modal-done">Close</button>
+      <button class="btn btn-ghost" id="view-edit-btn">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>
+        Edit
+      </button>
+    </div>
+  </div>
+</div>
+
+<div id="del-modal" class="modal-overlay">
+  <div class="modal-box modal-box-sm">
+    <div class="modal-header">
+      <h3 class="modal-title">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#f87171" stroke-width="2.5"><polyline points="3 6 5 6 21 6"/><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v2"/></svg>
+        Delete Note
+      </h3>
+      <button class="modal-close" id="del-modal-close">&times;</button>
+    </div>
+    <div class="modal-panel">
+      <p class="support-copy support-copy-md">Are you sure? This action <strong class="text-strong">cannot be undone</strong>.</p>
+    </div>
+    <div class="modal-footer">
+      <button class="btn btn-ghost" id="del-cancel-btn">Cancel</button>
+      <button class="btn btn-danger" id="del-confirm-btn">Delete</button>
+    </div>
+  </div>
+</div>
+
+<div id="toast"></div>
+
+<script src="./env.js"></script>
+<script type="module" src="src/core/app.js"></script>
+</body>
+</html>

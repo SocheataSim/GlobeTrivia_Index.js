@@ -1,0 +1,1240 @@
+[
+  {
+    "name": {
+      "common": "France",
+      "official": "French Republic",
+      "nativeName": {
+        "fra": {
+          "common": "France",
+          "official": "République française"
+        }
+      }
+    },
+    "cca2": "FR",
+    "cca3": "FRA",
+    "ccn3": "250",
+    "cioc": "FRA",
+    "independent": true,
+    "unMember": true,
+    "currencies": {
+      "EUR": {
+        "name": "Euro",
+        "symbol": "€"
+      }
+    },
+    "capital": ["Paris"],
+    "region": "Europe",
+    "subregion": "Western Europe",
+    "languages": {
+      "fra": "French"
+    },
+    "latlng": [46.0, 2.0],
+    "borders": ["AND", "BEL", "DEU", "ITA", "LUX", "MCO", "ESP", "CHE"],
+    "area": 551695,
+    "population": 67391582,
+    "continents": ["Europe"],
+    "flags": {
+      "png": "https://flagcdn.com/w320/fr.png",
+      "svg": "https://flagcdn.com/fr.svg"
+    },
+    "coatOfArms": {
+      "png": "https://mainfacts.com/media/images/coats_of_arms/fr.png",
+      "svg": "https://mainfacts.com/media/images/coats_of_arms/fr.svg"
+    },
+    "maps": {
+      "googleMaps": "https://goo.gl/maps/g7QxxSFsWyTPKuzd7",
+      "openStreetMaps": "https://www.openstreetmap.org/relation/1403916"
+    },
+    "timezones": ["UTC+01:00"],
+    "car": {"side": "right"},
+    "fifa": "FRA",
+    "flag": "🇫🇷"
+  },
+  {
+    "name": {
+      "common": "Japan",
+      "official": "Japan",
+      "nativeName": {
+        "jpn": {
+          "common": "日本",
+          "official": "日本"
+        }
+      }
+    },
+    "cca2": "JP",
+    "cca3": "JPN",
+    "ccn3": "392",
+    "cioc": "JPN",
+    "independent": true,
+    "unMember": true,
+    "currencies": {
+      "JPY": {
+        "name": "Japanese yen",
+        "symbol": "¥"
+      }
+    },
+    "capital": ["Tokyo"],
+    "region": "Asia",
+    "subregion": "Eastern Asia",
+    "languages": {
+      "jpn": "Japanese"
+    },
+    "latlng": [36.0, 138.0],
+    "borders": [],
+    "area": 377930,
+    "population": 125960000,
+    "continents": ["Asia"],
+    "flags": {
+      "png": "https://flagcdn.com/w320/jp.png",
+      "svg": "https://flagcdn.com/jp.svg"
+    },
+    "coatOfArms": {
+      "png": "",
+      "svg": ""
+    },
+    "maps": {
+      "googleMaps": "https://goo.gl/maps/NGTLSCSrA8bMrvnX9",
+      "openStreetMaps": "https://www.openstreetmap.org/relation/382313"
+    },
+    "timezones": ["UTC+09:00"],
+    "car": {"side": "left"},
+    "fifa": "JPN",
+    "flag": "🇯🇵"
+  },
+  {
+    "name": {
+      "common": "United States",
+      "official": "United States of America",
+      "nativeName": {
+        "eng": {
+          "common": "United States",
+          "official": "United States of America"
+        }
+      }
+    },
+    "cca2": "US",
+    "cca3": "USA",
+    "ccn3": "840",
+    "cioc": "USA",
+    "independent": true,
+    "unMember": true,
+    "currencies": {
+      "USD": {
+        "name": "United States dollar",
+        "symbol": "$"
+      }
+    },
+    "capital": ["Washington, D.C."],
+    "region": "Americas",
+    "subregion": "North America",
+    "languages": {
+      "eng": "English"
+    },
+    "latlng": [38.0, -97.0],
+    "borders": ["CAN", "MEX"],
+    "area": 9372610,
+    "population": 329484123,
+    "continents": ["North America"],
+    "flags": {
+      "png": "https://flagcdn.com/w320/us.png",
+      "svg": "https://flagcdn.com/us.svg"
+    },
+    "coatOfArms": {
+      "png": "",
+      "svg": ""
+    },
+    "maps": {
+      "googleMaps": "https://goo.gl/maps/4U3fR8SjFJQ2",
+      "openStreetMaps": "https://www.openstreetmap.org/relation/148838"
+    },
+    "timezones": ["UTC-12:00", "UTC-11:00", "UTC-10:00", "UTC-09:00", "UTC-08:00", "UTC-07:00", "UTC-06:00", "UTC-05:00", "UTC+10:00", "UTC+12:00"],
+    "car": {"side": "right"},
+    "fifa": "USA",
+    "flag": "🇺🇸"
+  },
+  {
+    "name": {
+      "common": "Brazil",
+      "official": "Federative Republic of Brazil",
+      "nativeName": {
+        "por": {
+          "common": "Brasil",
+          "official": "República Federativa do Brasil"
+        }
+      }
+    },
+    "cca2": "BR",
+    "cca3": "BRA",
+    "ccn3": "076",
+    "cioc": "BRA",
+    "independent": true,
+    "unMember": true,
+    "currencies": {
+      "BRL": {
+        "name": "Brazilian real",
+        "symbol": "R$"
+      }
+    },
+    "capital": ["Brasília"],
+    "region": "Americas",
+    "subregion": "South America",
+    "languages": {
+      "por": "Portuguese"
+    },
+    "latlng": [-10.0, -55.0],
+    "borders": ["ARG", "BOL", "COL", "GUF", "GUY", "PRY", "PER", "SUR", "URY", "VEN"],
+    "area": 8515767,
+    "population": 211000000,
+    "continents": ["South America"],
+    "flags": {
+      "png": "https://flagcdn.com/w320/br.png",
+      "svg": "https://flagcdn.com/br.svg"
+    },
+    "coatOfArms": {
+      "png": "https://mainfacts.com/media/images/coats_of_arms/br.png",
+      "svg": "https://mainfacts.com/media/images/coats_of_arms/br.svg"
+    },
+    "maps": {
+      "googleMaps": "https://goo.gl/maps/waCKk21HeeqFzkNC9",
+      "openStreetMaps": "https://www.openstreetmap.org/relation/59470"
+    },
+    "timezones": ["UTC-05:00", "UTC-04:00", "UTC-03:00", "UTC-02:00"],
+    "car": {"side": "right"},
+    "fifa": "BRA",
+    "flag": "🇧🇷"
+  },
+  {
+    "name": {
+      "common": "India",
+      "official": "Republic of India",
+      "nativeName": {
+        "hin": {
+          "common": "भारत",
+          "official": "भारत गणराज्य"
+        },
+        "eng": {
+          "common": "India",
+          "official": "Republic of India"
+        }
+      }
+    },
+    "cca2": "IN",
+    "cca3": "IND",
+    "ccn3": "356",
+    "cioc": "IND",
+    "independent": true,
+    "unMember": true,
+    "currencies": {
+      "INR": {
+        "name": "Indian rupee",
+        "symbol": "₹"
+      }
+    },
+    "capital": ["New Delhi"],
+    "region": "Asia",
+    "subregion": "Southern Asia",
+    "languages": {
+      "eng": "English",
+      "hin": "Hindi"
+    },
+    "latlng": [20.0, 77.0],
+    "borders": ["BGD", "BTN", "MMR", "CHN", "NPL", "PAK", "LKA"],
+    "area": 3287263,
+    "population": 1380004385,
+    "continents": ["Asia"],
+    "flags": {
+      "png": "https://flagcdn.com/w320/in.png",
+      "svg": "https://flagcdn.com/in.svg"
+    },
+    "coatOfArms": {
+      "png": "",
+      "svg": ""
+    },
+    "maps": {
+      "googleMaps": "https://goo.gl/maps/WSm6pms3MGyVkvnK9",
+      "openStreetMaps": "https://www.openstreetmap.org/relation/304716"
+    },
+    "timezones": ["UTC+05:30"],
+    "car": {"side": "left"},
+    "fifa": "IND",
+    "flag": "🇮🇳"
+  },
+  {
+    "name": {
+      "common": "Germany",
+      "official": "Federal Republic of Germany",
+      "nativeName": {
+        "deu": {
+          "common": "Deutschland",
+          "official": "Bundesrepublik Deutschland"
+        }
+      }
+    },
+    "cca2": "DE",
+    "cca3": "DEU",
+    "ccn3": "276",
+    "cioc": "GER",
+    "independent": true,
+    "unMember": true,
+    "currencies": {
+      "EUR": {
+        "name": "Euro",
+        "symbol": "€"
+      }
+    },
+    "capital": ["Berlin"],
+    "region": "Europe",
+    "subregion": "Western Europe",
+    "languages": {
+      "deu": "German"
+    },
+    "latlng": [51.0, 9.0],
+    "borders": ["AUT", "BEL", "CZE", "DNK", "FRA", "LUX", "NLD", "POL", "CHE"],
+    "area": 357114,
+    "population": 83240525,
+    "continents": ["Europe"],
+    "flags": {
+      "png": "https://flagcdn.com/w320/de.png",
+      "svg": "https://flagcdn.com/de.svg"
+    },
+    "coatOfArms": {
+      "png": "",
+      "svg": ""
+    },
+    "maps": {
+      "googleMaps": "https://goo.gl/maps/mD9FBMq1nvXUBrkv6",
+      "openStreetMaps": "https://www.openstreetmap.org/relation/51477"
+    },
+    "timezones": ["UTC+01:00"],
+    "car": {"side": "right"},
+    "fifa": "GER",
+    "flag": "🇩🇪"
+  },
+  {
+    "name": {
+      "common": "United Kingdom",
+      "official": "United Kingdom of Great Britain and Northern Ireland",
+      "nativeName": {
+        "eng": {
+          "common": "United Kingdom",
+          "official": "United Kingdom of Great Britain and Northern Ireland"
+        }
+      }
+    },
+    "cca2": "GB",
+    "cca3": "GBR",
+    "ccn3": "826",
+    "cioc": "GBR",
+    "independent": true,
+    "unMember": true,
+    "currencies": {
+      "GBP": {
+        "name": "British pound",
+        "symbol": "£"
+      }
+    },
+    "capital": ["London"],
+    "region": "Europe",
+    "subregion": "Northern Europe",
+    "languages": {
+      "eng": "English"
+    },
+    "latlng": [54.0, -2.0],
+    "borders": ["IRL"],
+    "area": 242900,
+    "population": 67215293,
+    "continents": ["Europe"],
+    "flags": {
+      "png": "https://flagcdn.com/w320/gb.png",
+      "svg": "https://flagcdn.com/gb.svg"
+    },
+    "coatOfArms": {
+      "png": "",
+      "svg": ""
+    },
+    "maps": {
+      "googleMaps": "https://goo.gl/maps/FoDtc3UKMkFsXAjHA",
+      "openStreetMaps": "https://www.openstreetmap.org/relation/62149"
+    },
+    "timezones": ["UTC-08:00", "UTC-05:00", "UTC-04:00", "UTC-03:00", "UTC-02:00", "UTC+00:00", "UTC+01:00", "UTC+02:00", "UTC+06:00"],
+    "car": {"side": "left"},
+    "fifa": "ENG",
+    "flag": "🇬🇧"
+  },
+  {
+    "name": {
+      "common": "Canada",
+      "official": "Canada",
+      "nativeName": {
+        "eng": {
+          "common": "Canada",
+          "official": "Canada"
+        },
+        "fra": {
+          "common": "Canada",
+          "official": "Canada"
+        }
+      }
+    },
+    "cca2": "CA",
+    "cca3": "CAN",
+    "ccn3": "124",
+    "cioc": "CAN",
+    "independent": true,
+    "unMember": true,
+    "currencies": {
+      "CAD": {
+        "name": "Canadian dollar",
+        "symbol": "$"
+      }
+    },
+    "capital": ["Ottawa"],
+    "region": "Americas",
+    "subregion": "North America",
+    "languages": {
+      "eng": "English",
+      "fra": "French"
+    },
+    "latlng": [60.0, -95.0],
+    "borders": ["USA"],
+    "area": 9984670,
+    "population": 38005238,
+    "continents": ["North America"],
+    "flags": {
+      "png": "https://flagcdn.com/w320/ca.png",
+      "svg": "https://flagcdn.com/ca.svg"
+    },
+    "coatOfArms": {
+      "png": "",
+      "svg": ""
+    },
+    "maps": {
+      "googleMaps": "https://goo.gl/maps/jmEVLWJ6KyYEmbp5",
+      "openStreetMaps": "https://www.openstreetmap.org/relation/1428125"
+    },
+    "timezones": ["UTC-08:00", "UTC-07:00", "UTC-06:00", "UTC-05:00", "UTC-04:00", "UTC-03:30"],
+    "car": {"side": "right"},
+    "fifa": "CAN",
+    "flag": "🇨🇦"
+  },
+  {
+    "name": {
+      "common": "Australia",
+      "official": "Commonwealth of Australia",
+      "nativeName": {
+        "eng": {
+          "common": "Australia",
+          "official": "Commonwealth of Australia"
+        }
+      }
+    },
+    "cca2": "AU",
+    "cca3": "AUS",
+    "ccn3": "036",
+    "cioc": "AUS",
+    "independent": true,
+    "unMember": true,
+    "currencies": {
+      "AUD": {
+        "name": "Australian dollar",
+        "symbol": "$"
+      }
+    },
+    "capital": ["Canberra"],
+    "region": "Oceania",
+    "subregion": "Australia and New Zealand",
+    "languages": {
+      "eng": "English"
+    },
+    "latlng": [-27.0, 133.0],
+    "borders": [],
+    "area": 7692024,
+    "population": 25687041,
+    "continents": ["Oceania"],
+    "flags": {
+      "png": "https://flagcdn.com/w320/au.png",
+      "svg": "https://flagcdn.com/au.svg"
+    },
+    "coatOfArms": {
+      "png": "",
+      "svg": ""
+    },
+    "maps": {
+      "googleMaps": "https://goo.gl/maps/DcjaDa7UbhnZTndH",
+      "openStreetMaps": "https://www.openstreetmap.org/relation/80500"
+    },
+    "timezones": ["UTC+05:00", "UTC+06:30", "UTC+07:00", "UTC+08:00", "UTC+09:30", "UTC+10:00", "UTC+10:30", "UTC+11:30"],
+    "car": {"side": "left"},
+    "fifa": "AUS",
+    "flag": "🇦🇺"
+  },
+  {
+    "name": {
+      "common": "China",
+      "official": "People's Republic of China",
+      "nativeName": {
+        "zho": {
+          "common": "中国",
+          "official": "中华人民共和国"
+        }
+      }
+    },
+    "cca2": "CN",
+    "cca3": "CHN",
+    "ccn3": "156",
+    "cioc": "CHN",
+    "independent": true,
+    "unMember": true,
+    "currencies": {
+      "CNY": {
+        "name": "Chinese yuan",
+        "symbol": "¥"
+      }
+    },
+    "capital": ["Beijing"],
+    "region": "Asia",
+    "subregion": "Eastern Asia",
+    "languages": {
+      "zho": "Chinese"
+    },
+    "latlng": [35.0, 105.0],
+    "borders": ["AFG", "BTN", "MMR", "HKG", "IND", "KAZ", "PRK", "KGZ", "LAO", "MAC", "MNG", "PAK", "RUS", "TJK", "VNM"],
+    "area": 9706961,
+    "population": 1402112000,
+    "continents": ["Asia"],
+    "flags": {
+      "png": "https://flagcdn.com/w320/cn.png",
+      "svg": "https://flagcdn.com/cn.svg"
+    },
+    "coatOfArms": {
+      "png": "",
+      "svg": ""
+    },
+    "maps": {
+      "googleMaps": "https://goo.gl/maps/p9qC6vgiFRRXzvGi7",
+      "openStreetMaps": "https://www.openstreetmap.org/relation/270056"
+    },
+    "timezones": ["UTC+08:00"],
+    "car": {"side": "right"},
+    "fifa": "CHN",
+    "flag": "🇨🇳"
+  },
+  {
+    "name": {
+      "common": "Russia",
+      "official": "Russian Federation",
+      "nativeName": {
+        "rus": {
+          "common": "Россия",
+          "official": "Российская Федерация"
+        }
+      }
+    },
+    "cca2": "RU",
+    "cca3": "RUS",
+    "ccn3": "643",
+    "cioc": "RUS",
+    "independent": true,
+    "unMember": true,
+    "currencies": {
+      "RUB": {
+        "name": "Russian ruble",
+        "symbol": "₽"
+      }
+    },
+    "capital": ["Moscow"],
+    "region": "Europe",
+    "subregion": "Eastern Europe",
+    "languages": {
+      "rus": "Russian"
+    },
+    "latlng": [60.0, 100.0],
+    "borders": ["AZE", "BLR", "CHN", "EST", "FIN", "GEO", "KAZ", "PRK", "LVA", "LTU", "MNG", "NOR", "POL", "UKR"],
+    "area": 17098242,
+    "population": 144104080,
+    "continents": ["Europe", "Asia"],
+    "flags": {
+      "png": "https://flagcdn.com/w320/ru.png",
+      "svg": "https://flagcdn.com/ru.svg"
+    },
+    "coatOfArms": {
+      "png": "",
+      "svg": ""
+    },
+    "maps": {
+      "googleMaps": "https://goo.gl/maps/4F4PpDhGJgVvLby57",
+      "openStreetMaps": "https://www.openstreetmap.org/relation/60189"
+    },
+    "timezones": ["UTC+03:00", "UTC+04:00", "UTC+06:00", "UTC+07:00", "UTC+08:00", "UTC+09:00", "UTC+10:00", "UTC+11:00", "UTC+12:00"],
+    "car": {"side": "right"},
+    "fifa": "RUS",
+    "flag": "🇷🇺"
+  },
+  {
+    "name": {
+      "common": "Mexico",
+      "official": "United Mexican States",
+      "nativeName": {
+        "spa": {
+          "common": "México",
+          "official": "Estados Unidos Mexicanos"
+        }
+      }
+    },
+    "cca2": "MX",
+    "cca3": "MEX",
+    "ccn3": "484",
+    "cioc": "MEX",
+    "independent": true,
+    "unMember": true,
+    "currencies": {
+      "MXN": {
+        "name": "Mexican peso",
+        "symbol": "$"
+      }
+    },
+    "capital": ["Mexico City"],
+    "region": "Americas",
+    "subregion": "North America",
+    "languages": {
+      "spa": "Spanish"
+    },
+    "latlng": [23.0, -102.0],
+    "borders": ["BLZ", "GTM", "USA"],
+    "area": 1964375,
+    "population": 128932753,
+    "continents": ["North America"],
+    "flags": {
+      "png": "https://flagcdn.com/w320/mx.png",
+      "svg": "https://flagcdn.com/mx.svg"
+    },
+    "coatOfArms": {
+      "png": "",
+      "svg": ""
+    },
+    "maps": {
+      "googleMaps": "https://goo.gl/maps/s5g7imNPMDEePxzbA",
+      "openStreetMaps": "https://www.openstreetmap.org/relation/114686"
+    },
+    "timezones": ["UTC-08:00", "UTC-07:00", "UTC-06:00"],
+    "car": {"side": "right"},
+    "fifa": "MEX",
+    "flag": "🇲🇽"
+  },
+  {
+    "name": {
+      "common": "South Africa",
+      "official": "Republic of South Africa",
+      "nativeName": {
+        "afr": {
+          "common": "Suid-Afrika",
+          "official": "Republiek van Suid-Afrika"
+        },
+        "eng": {
+          "common": "South Africa",
+          "official": "Republic of South Africa"
+        },
+        "nbl": {
+          "common": "uMzantsi Afrika",
+          "official": "IRiphabliki yeSewula Afrika"
+        },
+        "nso": {
+          "common": "Afrika-Borwa",
+          "official": "Rephaboliki ya Afrika Borwa"
+        },
+        "sot": {
+          "common": "Afrika Borwa",
+          "official": "Rephaboliki ya Afrika Borwa"
+        },
+        "ssw": {
+          "common": "Ningizimu Afrika",
+          "official": "IRiphabhulikhi yeNingizimu Afrika"
+        },
+        "tsn": {
+          "common": "Aforika Borwa",
+          "official": "Rephaboliki ya Aforika Borwa"
+        },
+        "tso": {
+          "common": "Afrika Dzonga",
+          "official": "Riphabuḽiki ya Afrika Dzonga"
+        },
+        "ven": {
+          "common": "Afrika Tshipembe",
+          "official": "Riphabuḽiki ya Afrika Tshipembe"
+        },
+        "xho": {
+          "common": "uMzantsi Afrika",
+          "official": "IRiphabliki yaseMzantsi Afrika"
+        },
+        "zul": {
+          "common": "iNingizimu Afrika",
+          "official": "IRiphabliki yaseNingizimu Afrika"
+        }
+      }
+    },
+    "cca2": "ZA",
+    "cca3": "ZAF",
+    "ccn3": "710",
+    "cioc": "RSA",
+    "independent": true,
+    "unMember": true,
+    "currencies": {
+      "ZAR": {
+        "name": "South African rand",
+        "symbol": "R"
+      }
+    },
+    "capital": ["Pretoria", "Bloemfontein", "Cape Town"],
+    "region": "Africa",
+    "subregion": "Southern Africa",
+    "languages": {
+      "afr": "Afrikaans",
+      "eng": "English",
+      "nbl": "Southern Ndebele",
+      "nso": "Northern Sotho",
+      "sot": "Southern Sotho",
+      "ssw": "Swazi",
+      "tsn": "Tswana",
+      "tso": "Tsonga",
+      "ven": "Venda",
+      "xho": "Xhosa",
+      "zul": "Zulu"
+    },
+    "latlng": [-29.0, 24.0],
+    "borders": ["BWA", "LSO", "MOZ", "NAM", "SWZ", "ZWE"],
+    "area": 1221037,
+    "population": 59308690,
+    "continents": ["Africa"],
+    "flags": {
+      "png": "https://flagcdn.com/w320/za.png",
+      "svg": "https://flagcdn.com/za.svg"
+    },
+    "coatOfArms": {
+      "png": "",
+      "svg": ""
+    },
+    "maps": {
+      "googleMaps": "https://goo.gl/maps/CLCZ1rJnZwKgJq6XA",
+      "openStreetMaps": "https://www.openstreetmap.org/relation/87565"
+    },
+    "timezones": ["UTC+02:00"],
+    "car": {"side": "left"},
+    "fifa": "RSA",
+    "flag": "🇿🇦"
+  },
+  {
+    "name": {
+      "common": "Egypt",
+      "official": "Arab Republic of Egypt",
+      "nativeName": {
+        "ara": {
+          "common": "مصر",
+          "official": "جمهورية مصر العربية"
+        }
+      }
+    },
+    "cca2": "EG",
+    "cca3": "EGY",
+    "ccn3": "818",
+    "cioc": "EGY",
+    "independent": true,
+    "unMember": true,
+    "currencies": {
+      "EGP": {
+        "name": "Egyptian pound",
+        "symbol": "£"
+      }
+    },
+    "capital": ["Cairo"],
+    "region": "Africa",
+    "subregion": "Northern Africa",
+    "languages": {
+      "ara": "Arabic"
+    },
+    "latlng": [27.0, 30.0],
+    "borders": ["ISR", "LBY", "SDN"],
+    "area": 1001449,
+    "population": 102334403,
+    "continents": ["Africa"],
+    "flags": {
+      "png": "https://flagcdn.com/w320/eg.png",
+      "svg": "https://flagcdn.com/eg.svg"
+    },
+    "coatOfArms": {
+      "png": "",
+      "svg": ""
+    },
+    "maps": {
+      "googleMaps": "https://goo.gl/maps/uoDRhXbsqjG6L7VG",
+      "openStreetMaps": "https://www.openstreetmap.org/relation/1473947"
+    },
+    "timezones": ["UTC+02:00"],
+    "car": {"side": "right"},
+    "fifa": "EGY",
+    "flag": "🇪🇬"
+  },
+  {
+    "name": {
+      "common": "Argentina",
+      "official": "Argentine Republic",
+      "nativeName": {
+        "spa": {
+          "common": "Argentina",
+          "official": "República Argentina"
+        }
+      }
+    },
+    "cca2": "AR",
+    "cca3": "ARG",
+    "ccn3": "032",
+    "cioc": "ARG",
+    "independent": true,
+    "unMember": true,
+    "currencies": {
+      "ARS": {
+        "name": "Argentine peso",
+        "symbol": "$"
+      }
+    },
+    "capital": ["Buenos Aires"],
+    "region": "Americas",
+    "subregion": "South America",
+    "languages": {
+      "spa": "Spanish"
+    },
+    "latlng": [-34.0, -64.0],
+    "borders": ["BOL", "BRA", "CHL", "PRY", "URY"],
+    "area": 2780400,
+    "population": 45376763,
+    "continents": ["South America"],
+    "flags": {
+      "png": "https://flagcdn.com/w320/ar.png",
+      "svg": "https://flagcdn.com/ar.svg"
+    },
+    "coatOfArms": {
+      "png": "",
+      "svg": ""
+    },
+    "maps": {
+      "googleMaps": "https://goo.gl/maps/Z9DXNxhf2o93kvyc6",
+      "openStreetMaps": "https://www.openstreetmap.org/relation/286393"
+    },
+    "timezones": ["UTC-03:00"],
+    "car": {"side": "right"},
+    "fifa": "ARG",
+    "flag": "🇦🇷"
+  },
+  {
+    "name": {
+      "common": "Spain",
+      "official": "Kingdom of Spain",
+      "nativeName": {
+        "spa": {
+          "common": "España",
+          "official": "Reino de España"
+        }
+      }
+    },
+    "cca2": "ES",
+    "cca3": "ESP",
+    "ccn3": "724",
+    "cioc": "ESP",
+    "independent": true,
+    "unMember": true,
+    "currencies": {
+      "EUR": {
+        "name": "Euro",
+        "symbol": "€"
+      }
+    },
+    "capital": ["Madrid"],
+    "region": "Europe",
+    "subregion": "Southern Europe",
+    "languages": {
+      "spa": "Spanish"
+    },
+    "latlng": [40.0, -4.0],
+    "borders": ["AND", "FRA", "GIB", "PRT", "MAR"],
+    "area": 505992,
+    "population": 47351567,
+    "continents": ["Europe"],
+    "flags": {
+      "png": "https://flagcdn.com/w320/es.png",
+      "svg": "https://flagcdn.com/es.svg"
+    },
+    "coatOfArms": {
+      "png": "",
+      "svg": ""
+    },
+    "maps": {
+      "googleMaps": "https://goo.gl/maps/138JaXW8EZzRVitY9",
+      "openStreetMaps": "https://www.openstreetmap.org/relation/1311341"
+    },
+    "timezones": ["UTC", "UTC+01:00"],
+    "car": {"side": "right"},
+    "fifa": "ESP",
+    "flag": "🇪🇸"
+  },
+  {
+    "name": {
+      "common": "Italy",
+      "official": "Italian Republic",
+      "nativeName": {
+        "ita": {
+          "common": "Italia",
+          "official": "Repubblica italiana"
+        }
+      }
+    },
+    "cca2": "IT",
+    "cca3": "ITA",
+    "ccn3": "380",
+    "cioc": "ITA",
+    "independent": true,
+    "unMember": true,
+    "currencies": {
+      "EUR": {
+        "name": "Euro",
+        "symbol": "€"
+      }
+    },
+    "capital": ["Rome"],
+    "region": "Europe",
+    "subregion": "Southern Europe",
+    "languages": {
+      "ita": "Italian"
+    },
+    "latlng": [42.8333, 12.8333],
+    "borders": ["AUT", "FRA", "SMR", "SVN", "CHE", "VAT"],
+    "area": 301336,
+    "population": 59554023,
+    "continents": ["Europe"],
+    "flags": {
+      "png": "https://flagcdn.com/w320/it.png",
+      "svg": "https://flagcdn.com/it.svg"
+    },
+    "coatOfArms": {
+      "png": "",
+      "svg": ""
+    },
+    "maps": {
+      "googleMaps": "https://goo.gl/maps/8M1CLAjHYVrb84VA",
+      "openStreetMaps": "https://www.openstreetmap.org/relation/365331"
+    },
+    "timezones": ["UTC+01:00"],
+    "car": {"side": "right"},
+    "fifa": "ITA",
+    "flag": "🇮🇹"
+  },
+  {
+    "name": {
+      "common": "Netherlands",
+      "official": "Kingdom of the Netherlands",
+      "nativeName": {
+        "nld": {
+          "common": "Nederland",
+          "official": "Koninkrijk der Nederlanden"
+        }
+      }
+    },
+    "cca2": "NL",
+    "cca3": "NLD",
+    "ccn3": "528",
+    "cioc": "NED",
+    "independent": true,
+    "unMember": true,
+    "currencies": {
+      "EUR": {
+        "name": "Euro",
+        "symbol": "€"
+      }
+    },
+    "capital": ["Amsterdam"],
+    "region": "Europe",
+    "subregion": "Western Europe",
+    "languages": {
+      "nld": "Dutch"
+    },
+    "latlng": [52.5, 5.75],
+    "borders": ["BEL", "DEU"],
+    "area": 41850,
+    "population": 16655799,
+    "continents": ["Europe"],
+    "flags": {
+      "png": "https://flagcdn.com/w320/nl.png",
+      "svg": "https://flagcdn.com/nl.svg"
+    },
+    "coatOfArms": {
+      "png": "",
+      "svg": ""
+    },
+    "maps": {
+      "googleMaps": "https://goo.gl/maps/Hv6zQswGhFxoVVBm6",
+      "openStreetMaps": "https://www.openstreetmap.org/relation/47796"
+    },
+    "timezones": ["UTC-04:00", "UTC+01:00"],
+    "car": {"side": "right"},
+    "fifa": "NED",
+    "flag": "🇳🇱"
+  },
+  {
+    "name": {
+      "common": "South Korea",
+      "official": "Republic of Korea",
+      "nativeName": {
+        "kor": {
+          "common": "대한민국",
+          "official": "대한민국"
+        }
+      }
+    },
+    "cca2": "KR",
+    "cca3": "KOR",
+    "ccn3": "410",
+    "cioc": "KOR",
+    "independent": true,
+    "unMember": true,
+    "currencies": {
+      "KRW": {
+        "name": "South Korean won",
+        "symbol": "₩"
+      }
+    },
+    "capital": ["Seoul"],
+    "region": "Asia",
+    "subregion": "Eastern Asia",
+    "languages": {
+      "kor": "Korean"
+    },
+    "latlng": [37.0, 127.5],
+    "borders": ["PRK"],
+    "area": 100210,
+    "population": 51780579,
+    "continents": ["Asia"],
+    "flags": {
+      "png": "https://flagcdn.com/w320/kr.png",
+      "svg": "https://flagcdn.com/kr.svg"
+    },
+    "coatOfArms": {
+      "png": "",
+      "svg": ""
+    },
+    "maps": {
+      "googleMaps": "https://goo.gl/maps/7ecjaJXefjAQhxjGA",
+      "openStreetMaps": "https://www.openstreetmap.org/relation/307756"
+    },
+    "timezones": ["UTC+09:00"],
+    "car": {"side": "right"},
+    "fifa": "KOR",
+    "flag": "🇰🇷"
+  },
+  {
+    "name": {
+      "common": "Turkey",
+      "official": "Republic of Turkey",
+      "nativeName": {
+        "tur": {
+          "common": "Türkiye",
+          "official": "Türkiye Cumhuriyeti"
+        }
+      }
+    },
+    "cca2": "TR",
+    "cca3": "TUR",
+    "ccn3": "792",
+    "cioc": "TUR",
+    "independent": true,
+    "unMember": true,
+    "currencies": {
+      "TRY": {
+        "name": "Turkish lira",
+        "symbol": "₺"
+      }
+    },
+    "capital": ["Ankara"],
+    "region": "Asia",
+    "subregion": "Western Asia",
+    "languages": {
+      "tur": "Turkish"
+    },
+    "latlng": [39.0, 35.0],
+    "borders": ["ARM", "AZE", "BGR", "GEO", "GRC", "IRN", "IRQ", "SYR"],
+    "area": 783562,
+    "population": 84339067,
+    "continents": ["Asia"],
+    "flags": {
+      "png": "https://flagcdn.com/w320/tr.png",
+      "svg": "https://flagcdn.com/tr.svg"
+    },
+    "coatOfArms": {
+      "png": "",
+      "svg": ""
+    },
+    "maps": {
+      "googleMaps": "https://goo.gl/maps/dXFFraiUDfcB6Quk6",
+      "openStreetMaps": "https://www.openstreetmap.org/relation/174737"
+    },
+    "timezones": ["UTC+03:00"],
+    "car": {"side": "right"},
+    "fifa": "TUR",
+    "flag": "🇹🇷"
+  },
+  {
+    "name": {
+      "common": "Saudi Arabia",
+      "official": "Kingdom of Saudi Arabia",
+      "nativeName": {
+        "ara": {
+          "common": "العربية السعودية",
+          "official": "المملكة العربية السعودية"
+        }
+      }
+    },
+    "cca2": "SA",
+    "cca3": "SAU",
+    "ccn3": "682",
+    "cioc": "KSA",
+    "independent": true,
+    "unMember": true,
+    "currencies": {
+      "SAR": {
+        "name": "Saudi riyal",
+        "symbol": "﷼"
+      }
+    },
+    "capital": ["Riyadh"],
+    "region": "Asia",
+    "subregion": "Western Asia",
+    "languages": {
+      "ara": "Arabic"
+    },
+    "latlng": [25.0, 45.0],
+    "borders": ["IRQ", "JOR", "KWT", "OMN", "QAT", "ARE", "YEM"],
+    "area": 2149690,
+    "population": 34813867,
+    "continents": ["Asia"],
+    "flags": {
+      "png": "https://flagcdn.com/w320/sa.png",
+      "svg": "https://flagcdn.com/sa.svg"
+    },
+    "coatOfArms": {
+      "png": "",
+      "svg": ""
+    },
+    "maps": {
+      "googleMaps": "https://goo.gl/maps/5PSjvdJ1A8qMtG49",
+      "openStreetMaps": "https://www.openstreetmap.org/relation/307584"
+    },
+    "timezones": ["UTC+03:00"],
+    "car": {"side": "right"},
+    "fifa": "KSA",
+    "flag": "🇸🇦"
+  },
+  {
+    "name": {
+      "common": "Nigeria",
+      "official": "Federal Republic of Nigeria",
+      "nativeName": {
+        "eng": {
+          "common": "Nigeria",
+          "official": "Federal Republic of Nigeria"
+        }
+      }
+    },
+    "cca2": "NG",
+    "cca3": "NGA",
+    "ccn3": "566",
+    "cioc": "NGR",
+    "independent": true,
+    "unMember": true,
+    "currencies": {
+      "NGN": {
+        "name": "Nigerian naira",
+        "symbol": "₦"
+      }
+    },
+    "capital": ["Abuja"],
+    "region": "Africa",
+    "subregion": "Western Africa",
+    "languages": {
+      "eng": "English"
+    },
+    "latlng": [10.0, 8.0],
+    "borders": ["BEN", "CMR", "TCD", "NER"],
+    "area": 923768,
+    "population": 218541212,
+    "continents": ["Africa"],
+    "flags": {
+      "png": "https://flagcdn.com/w320/ng.png",
+      "svg": "https://flagcdn.com/ng.svg"
+    },
+    "coatOfArms": {
+      "png": "",
+      "svg": ""
+    },
+    "maps": {
+      "googleMaps": "https://goo.gl/maps/LTn417qWwBPFszuV9",
+      "openStreetMaps": "https://www.openstreetmap.org/relation/192787"
+    },
+    "timezones": ["UTC+01:00"],
+    "car": {"side": "right"},
+    "fifa": "NGA",
+    "flag": "🇳🇬"
+  },
+  {
+    "name": {
+      "common": "Kenya",
+      "official": "Republic of Kenya",
+      "nativeName": {
+        "eng": {
+          "common": "Kenya",
+          "official": "Republic of Kenya"
+        },
+        "swa": {
+          "common": "Kenya",
+          "official": "Republic of Kenya"
+        }
+      }
+    },
+    "cca2": "KE",
+    "cca3": "KEN",
+    "ccn3": "404",
+    "cioc": "KEN",
+    "independent": true,
+    "unMember": true,
+    "currencies": {
+      "KES": {
+        "name": "Kenyan shilling",
+        "symbol": "Sh"
+      }
+    },
+    "capital": ["Nairobi"],
+    "region": "Africa",
+    "subregion": "Eastern Africa",
+    "languages": {
+      "eng": "English",
+      "swa": "Swahili"
+    },
+    "latlng": [1.0, 38.0],
+    "borders": ["ETH", "SOM", "SSD", "TZA", "UGA"],
+    "area": 580367,
+    "population": 53771300,
+    "continents": ["Africa"],
+    "flags": {
+      "png": "https://flagcdn.com/w320/ke.png",
+      "svg": "https://flagcdn.com/ke.svg"
+    },
+    "coatOfArms": {
+      "png": "",
+      "svg": ""
+    },
+    "maps": {
+      "googleMaps": "https://goo.gl/maps/Ni9M7wcCxf8bJHLX8",
+      "openStreetMaps": "https://www.openstreetmap.org/relation/192798"
+    },
+    "timezones": ["UTC+03:00"],
+    "car": {"side": "left"},
+    "fifa": "KEN",
+    "flag": "🇰🇪"
+  }
+]
