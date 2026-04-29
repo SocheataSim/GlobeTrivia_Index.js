@@ -30,7 +30,7 @@ export function initExplore() {
     });
   }
 
-  // Use event delegation for dynamic quick chips
+  // Use event delegation 
   document.getElementById('quick-chips-container')?.addEventListener('click', (event) => {
     const chip = event.target.closest('.quick-chip[data-quick]');
     if (chip) {
@@ -72,7 +72,6 @@ export function renderExploreSection() {
   const user = getCurrentUser();
   const exploreHero = document.querySelector('.explore-hero');
 
-  // Only update if the explore hero is actually visible (the user has clicked "Start Exploring")
   if (!exploreHero || exploreHero.style.display === 'none') return;
 
   randomizeQuickChips();
@@ -268,7 +267,6 @@ async function fetchWithTimeout(url, timeoutMs = 4000) {
   }
 }
 
-// Common country name → cca2 for instant reliable lookups (avoids API unpredictability)
 const COMMON_CODES = {
   'afghanistan': 'AF', 'albania': 'AL', 'algeria': 'DZ', 'argentina': 'AR', 'australia': 'AU',
   'austria': 'AT', 'bangladesh': 'BD', 'belgium': 'BE', 'bolivia': 'BO', 'brazil': 'BR',
@@ -296,7 +294,6 @@ const COMMON_CODES = {
 const BACKUP_COUNTRIES_URL = '/backup/countries.json';
 let _backupCountriesCache = null;
 
-// CCA3 → CCA2 local lookup — avoids an API round-trip for border code conversion
 const CCA3_TO_CCA2 = {
   'AFG':'AF','ALB':'AL','DZA':'DZ','AND':'AD','AGO':'AO','ATG':'AG','ARG':'AR','ARM':'AM','AUS':'AU','AUT':'AT','AZE':'AZ',
   'BHS':'BS','BHR':'BH','BGD':'BD','BRB':'BB','BLR':'BY','BEL':'BE','BLZ':'BZ','BEN':'BJ','BTN':'BT','BOL':'BO','BIH':'BA',
@@ -532,13 +529,11 @@ async function fetchCountryByName(query) {
 async function fetchCountryByCode(code) {
   let upperCode = code.toUpperCase();
 
-  // Convert CCA3 → CCA2 using local lookup first (instant, no API call)
   if (upperCode.length === 3) {
     const mapped = CCA3_TO_CCA2[upperCode];
     if (mapped) {
       upperCode = mapped;
     } else {
-      // Only hit REST Countries for CCA3→CCA2 if not in our local map
       try {
         const res = await fetchWithTimeout(`https://restcountries.com/v3.1/alpha/${upperCode}`, 3000);
         if (res.ok) {
@@ -552,7 +547,6 @@ async function fetchCountryByCode(code) {
     }
   }
 
-  // Fetch Countries Now metadata in parallel (positions + codes + info)
   let codesData = null, positionsData = null, infoData = null;
 
   try {
@@ -573,14 +567,12 @@ async function fetchCountryByCode(code) {
   const positionInfo = positionsData?.data?.find(c => c.iso2 === upperCode);
   const basicInfo = infoData?.data?.find(c => c.iso2 === upperCode);
 
-  // Try REST Countries with a short timeout — best data source when available
   try {
     const restRes = await fetchWithTimeout(`https://restcountries.com/v3.1/alpha/${encodeURIComponent(upperCode)}`, 4000);
     if (restRes.ok) {
       const restData = await restRes.json();
       const country = Array.isArray(restData) ? restData[0] : restData;
       if (country) {
-        // Patch latlng from Countries Now if missing
         if ((!Array.isArray(country.latlng) || country.latlng.length === 0) && positionInfo) {
           country.latlng = [positionInfo.lat, positionInfo.long];
         }

@@ -1,5 +1,5 @@
 # ── Environment / Secrets ──────────────────────────────────────────
-# env.js contains real API keys — NEVER commit this file
+# env.js contains real API keys 
 env.js
 
 # ── OS & editor noise ──────────────────────────────────────────────

@@ -123,7 +123,6 @@ function renderNotes() {
     return;
   }
 
-  // Generate a consistent accent color per country name
   const accentColors = [
     'linear-gradient(90deg,#3b82f6,#6366f1)',
     'linear-gradient(90deg,#14b8a6,#06b6d4)',

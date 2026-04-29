@@ -1,8 +1,4 @@
-// ═══════════════════════════════════════════════════════════════
 //  UTILITY FUNCTIONS
-//  (Separate module to avoid circular dependencies)
-// ═══════════════════════════════════════════════════════════════
-
 export function showField(id, text = '') {
     const el = document.getElementById(id);
     if (el) {

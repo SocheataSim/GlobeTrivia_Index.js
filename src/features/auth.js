@@ -10,14 +10,10 @@ import { doc, setDoc, getDoc, serverTimestamp } from "https://www.gstatic.com/fi
 import { setCurrentUser } from '../core/state.js';
 import { showToast } from '../core/utils.js';
 
-// ═══════════════════════════════════════
 //  STATE
-// ═══════════════════════════════════════
 export let currentUser = null;
 
-// ═══════════════════════════════════════
 //  AUTH STATE LISTENER
-// ═══════════════════════════════════════
 export function initAuth(onLogin, onLogout) {
   onAuthStateChanged(auth, async user => {
     currentUser = user;
@@ -32,9 +28,7 @@ export function initAuth(onLogin, onLogout) {
   });
 }
 
-// ═══════════════════════════════════════
 //  REGISTER
-// ═══════════════════════════════════════
 export async function register() {
   const name     = document.getElementById('reg-name').value.trim();
   const email    = document.getElementById('reg-email').value.trim();
@@ -67,9 +61,7 @@ export async function register() {
   }
 }
 
-// ═══════════════════════════════════════
 //  LOGIN
-// ═══════════════════════════════════════
 export async function login() {
   const email    = document.getElementById('login-email').value.trim();
   const password = document.getElementById('login-password').value;
@@ -94,18 +86,14 @@ export async function login() {
   }
 }
 
-// ═══════════════════════════════════════
 //  LOGOUT
-// ═══════════════════════════════════════
 export async function logout() {
   await signOut(auth);
   showToast('👋 Signed out.', 'info');
   window.location.hash = '#home';
 }
 
-// ═══════════════════════════════════════
 //  NAV USER DISPLAY
-// ═══════════════════════════════════════
 function updateNavUser(user) {
   const guestEl  = document.getElementById('nav-guest');
   const userEl   = document.getElementById('nav-user');
@@ -121,9 +109,7 @@ function updateNavUser(user) {
   }
 }
 
-// ═══════════════════════════════════════
 //  MODAL HELPERS
-// ═══════════════════════════════════════
 export function openAuthModal(tab = 'login') {
   document.getElementById('auth-modal').classList.add('open');
   switchAuthTab(tab);

@@ -30,17 +30,16 @@ export async function renderHistorySection() {
     const notes = notesSnapshot.docs.map((entry) => ({ id: entry.id, ...entry.data() }));
     const history = historySnapshot.docs.map((entry) => ({ id: entry.id, ...entry.data() }));
 
-    // FIX 2: Build countryMap tracking the best (most recent) lastActivity across
-    // both history AND notes, so countries only in notes still sort correctly.
+
     const countryMap = new Map();
 
     const upsert = (country, activity, note = null) => {
-      if (!country) return; // FIX 3: guard against undefined country names
+      if (!country) return; 
       if (!countryMap.has(country)) {
         countryMap.set(country, { lastActivity: null, notes: [] });
       }
       const entry = countryMap.get(country);
-      // Keep the most recent timestamp across all sources
+      
       if (activity != null) {
         const incoming = getDateValue(activity);
         const existing = getDateValue(entry.lastActivity);
@@ -66,7 +65,6 @@ export async function renderHistorySection() {
         lastActivity: data.lastActivity,
         flagUrl: flagMap.get(country) || null
       }))
-      // FIX 4: Sort is now reliable because getDateValue always returns a number
       .sort((a, b) => getDateValue(b.lastActivity) - getDateValue(a.lastActivity));
 
     renderHistory(countries);
@@ -171,7 +169,6 @@ function renderHistory(countries) {
     </div>
   `;
 
-  // See More functionality
   document.getElementById('history-see-more-btn')?.addEventListener('click', (e) => {
     const grid = document.getElementById('history-grid');
     if (grid) {
@@ -180,16 +177,11 @@ function renderHistory(countries) {
     }
   });
 
-  // Clear any existing clear-lb listeners before adding
   document.getElementById('history-clear-lb-btn')?.addEventListener('click', clearLeaderboard);
 
-  // FIX 6: renderLeaderboard targets #lb-container which now exists in the DOM —
-  // call it after the HTML is fully written, not before.
   renderLeaderboard();
 }
 
-// Fetches flag URLs for a list of country names from REST Countries API in one request.
-// Returns a Map of { countryName -> flagUrl }.
 async function fetchFlagMap(countryNames) {
   const flagMap = new Map();
   if (!countryNames.length) return flagMap;
@@ -197,19 +189,16 @@ async function fetchFlagMap(countryNames) {
     const res = await fetch('https://restcountries.com/v3.1/all?fields=name,flags');
     if (!res.ok) return flagMap;
     const data = await res.json();
-    // Build a lookup: lowercase common name -> flag png url
     const lookup = new Map(data.map(c => [c.name.common.toLowerCase(), c.flags?.png || c.flags?.svg || null]));
     countryNames.forEach(name => {
       const url = lookup.get(name.toLowerCase());
       if (url) flagMap.set(name, url);
     });
   } catch {
-    // Network error — flagMap stays empty, emoji fallback will be used
   }
   return flagMap;
 }
 
-// Fallback when REST Countries API is unavailable — just show a generic globe.
 function getEmojiFlag() {
   return '🌍';
 }

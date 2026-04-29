@@ -3,7 +3,6 @@ import { saveScore } from "./leaderboard.js";
 import { authReady, getCurrentUser } from "../core/state.js";
 import { openAuthModal } from "./auth.js";
 
-//  STATE
 let quizQuestions = [];
 let quizIndex = 0;
 let quizScore = 0;
@@ -29,7 +28,6 @@ function getOrCreateQuizLoginGate() {
   return container;
 }
 
-//  AUTH GATE UI  (mirrors Notes page)
 function renderQuizLogin() {
   const setup = document.getElementById("quiz-setup");
   if (setup) setup.style.display = "flex";
@@ -101,7 +99,6 @@ export async function initQuiz() {
     });
 }
 
-//  START
 async function startQuiz() {
   if (!getCurrentUser()) {
     window.location.hash = "#home";
@@ -161,7 +158,6 @@ async function startQuiz() {
   }
 }
 
-//  SHOW QUESTION
 function showQuestion() {
   const q = quizQuestions[quizIndex];
   quizAnswered = false;
@@ -189,7 +185,6 @@ function showQuestion() {
   });
 }
 
-//  ANSWER
 function answerQuestion(selected, btn) {
   if (quizAnswered) return;
   quizAnswered = true;
@@ -226,9 +221,6 @@ function answerQuestion(selected, btn) {
   else document.getElementById("next-btn").classList.remove("is-hidden");
 }
 
-// ═══════════════════════════════════════
-//  NAVIGATION
-// ═══════════════════════════════════════
 function nextQuestion() {
   quizIndex++;
   showQuestion();
